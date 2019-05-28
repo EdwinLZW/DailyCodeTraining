@@ -3,7 +3,7 @@ __author__ = 'Simon Liu'
 
 
 import pymysql
-from sqltest.Configfile import *
+from Configfile import *
 
 
 class MysqlOperate(object):

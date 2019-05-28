@@ -3,6 +3,7 @@
 
 __author__ = "Simon Liu"
 
+
 def get_F(sub):
     F = [0]
     for i in range(2, len(sub)+1):
@@ -115,7 +116,8 @@ def simple_matching(t, p):
 
 
 if __name__ == '__main__':
-    print match('abaabaabbabaaabaabbabaab', 'abaabbabaab')
-    print simple_matching('abaabaabbabaaabaabbabaab', 'abaabbabaab')
+    print "最大长度前缀后缀：",get_F('abaabbabaab')
+    print "KMP：", match('abaabaabbabaaabaabbabaab', 'abaabbabaab')
+    print "暴力匹配：", simple_matching('abaabaabbabaaabaabbabaab', 'abaabbabaab')
 
 
